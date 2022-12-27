@@ -1,145 +1,210 @@
-/* index page */
-/* css for index.html */
-html{
+*{
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    box-sizing: border-box;
+}
+body{
     background-color: black;
 }
 
-/* css for menu */
 .menu{
-display: flex;
-color: white;
-background-color: white;
-border-radius: 1rem;
-}
-.menu img{
-    width: 5rem;
-    height: 5rem;
-    margin-left: 1rem;
-}
-ul{
     display: flex;
-    padding: 1rem;
-    margin-left: 15rem;
-    background-color: black;
+    color: white;
+    background-color: white;
     border-radius: 1rem;
-}
-ul li{
-    list-style-type: none;
-    font-size: 2rem;
-    /* margin-left: 3rem; */
-   
+    }
+
+
+
+    .menu img{
+        width: 5rem;
+        height: 5rem;
+        margin-left: 1rem;
+    }
+    ul{
+        display: flex;
+        padding: 2rem;
+        margin-left: 15rem;
+        /* background-color: black */
+        border-radius: 1rem;
+    }
+    ul li{
+        list-style-type: none;
+        font-size: 2rem;
+        border-radius: 1rem;
+        /* margin-left: 3rem; */
+       
+        
+    }
+    ul li:hover{
+        list-style-type: none;
+        font-size: 2rem;
+        /* margin-left: 3rem; */
+        
+        
+    }
+    ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 1rem;
+        background-color: black;
+        /* margin: 1rem; */
+    }
+    ul li a:hover{
+        text-decoration: none;
+        color: rgb(220, 175, 13);
+        text-align: center;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
     
-}
-ul li:hover{
-    list-style-type: none;
-    font-size: 2rem;
-    /* margin-left: 3rem; */
-    
-    
-}
-ul li a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    margin: 1rem;
-}
-ul li a:hover{
-    text-decoration: none;
-    color: yellow;
-    text-align: center;
-    margin: 1rem;
-}
-.menu  span{
-   font-size: 4rem;
-   font-size: 4rem;
-   padding: 1rem;
-   margin-left: 7rem;
-   color: black;
-}
+    .menu  span{
+        font-size: 4rem;
+        padding: 1rem;
+        margin-left: 7rem;
+        color: black;
+     }    
 
+     .items{
+        display: flex;
+        flex-direction: column;
+        background-image: url("images/HOME5.png") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 99vw,80vh;
+        position: absolute;
+        width: 100vw;
+        height: 85vh;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .items button{
+            display: block;
+            padding: 1rem ;
+            width: 10rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: red;
+            text-align: center;
+          
+          }
 
-.items{
-display: flex;
-flex-direction: column;
-background-image: url("images/home4.png") ;
-background-size: 99vw,80vh;
-position: absolute;
-width: 99vw;
-height: 85vh;
-align-items: center;
-justify-content: center;
-}
-
-.items button{
-  display: block;
-  padding: 1rem ;
-  width: 10rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  border: none;
-  background-color: red;
-  text-align: center;
-
-}
-.items button a{
-    color: white;
-    text-decoration: none;
-   text-align: center;
-    font-size: 2rem;
-}
-.items span{
-color: rgb(46, 41, 41);
-background-color: rgb(255, 255, 255);
-display: block;
-width: 14rem;
-padding: 1rem;
-border-radius: 1rem;
-font-size: 1.5rem;
-text-align: center;
-}
-
-
-
-
-
+          .items button:hover{
+            display: block;
+            padding: 1rem ;
+            width: 16rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: red;
+            text-align: center;
+          
+          }
+          .items button a{
+              color: white;
+              text-decoration: none;
+             text-align: center;
+              font-size: 2rem;
+          }
+          .items button a:hover{
+            color: rgb(255, 253, 253);
+            text-decoration: none;
+           text-align: center;
+            font-size: 2rem;
+            
+        }
+          .items span{
+          color: rgb(46, 41, 41);
+          background-color: rgb(255, 255, 255);
+          display: block;
+          width: 15rem;
+          padding: 1rem;
+          border-radius: 1rem;
+          font-size: 1.5rem;
+          text-align: center;
+          }
 
 
 /* about page */
 
 .aboutsec{
-width: 95vw;
-height: 85vh;
-display: flex;
-}
-.aboutsec .profile{
-    width: 54vw;
-    padding: 3rem;
-    margin: 3rem;
-/* height: 85vh; */
-}
-.aboutsec .profile img{
-display: block;
-width: 25rem;
-border-radius: 1rem;
-}
-.aboutsec .protext{
-     padding: 3rem;
-     margin: 3rem;
+    width: 95vw;
+    height: 85vh;
+    display: flex;
+    }
+    .aboutsec .profile{
+        width: 54vw;
+        padding: 3rem;
+        margin: 3rem;
+    /* height: 85vh; */
+    }
+    .aboutsec .profile img{
+    display: block;
+    width: 25rem;
+    border-radius: 1rem;
+    }
+    .aboutsec .protext{
+         padding: 3rem;
+         margin: 3rem;
+    
+    }
+    
+    .aboutsec .protext em{
+    font-size: 3rem;
+    color: rgb(116, 116, 205);
+     
+    }
+    
+    .aboutsec .protext p {
+    
+        font-size: 1.5rem;
+        color: white;
+    }
+    
 
-}
 
-.aboutsec .protext em{
+/* work page */
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h1{
+color: aliceblue;
+margin-top: 2rem;
 font-size: 3rem;
-color: rgb(116, 116, 205);
- 
+
+}
+.heading .hello{
+    color: aliceblue;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
-.aboutsec .protext p {
 
-    font-size: 1.5rem;
-    color: white;
+.container{
+/* width: 100vw; */
+padding: 4rem;
+display: grid;
+column-gap: 50px;
+row-gap: 50px;
+grid-template-columns: auto auto auto;
+
 }
+
+.container .box img{
+    width: 29rem;
+    height:100%;
+    background: red;
+    transition: width 2s, height 4s;
+    /* z-index: -1; */
+}
+.container .box img:hover{
+    width: 60rem;
+
+    /* z-index: 1; */
+}
+
