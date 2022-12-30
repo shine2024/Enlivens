@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap'); 
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ body{
     color: white;
     background-color: white;
     border-radius: 1rem;
+    margin-left: 1rem;
     }
 
 
@@ -24,7 +29,7 @@ body{
     ul{
         display: flex;
         padding: 2rem;
-        margin-left: 15rem;
+        margin-left: 12rem;
         /* background-color: black */
         border-radius: 1rem;
     }
@@ -59,7 +64,7 @@ body{
         border-radius: 1rem;
     }
     
-    .menu  span{
+    .menu  em{
         font-size: 4rem;
         padding: 1rem;
         margin-left: 7rem;
@@ -73,11 +78,18 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size: 99vw,80vh;
-        position: absolute;
-        width: 100vw;
-        height: 85vh;
+        /* position: absolute; */
+        position: fixed;
+        width: 99vw;
+        height: 80vh;
         align-items: center;
         justify-content: center;
+
+        }
+        em .text1{
+            color: black;
+            font-size: 5rem;
+            
         }
         
         .items button{
@@ -99,7 +111,7 @@ body{
             padding: 1rem;
             border-radius: 1rem;
             border: none;
-            background-color: red;
+            background-color: rgb(255, 0, 0);
             text-align: center;
           
           }
@@ -116,7 +128,7 @@ body{
             font-size: 2rem;
             
         }
-          .items span{
+          .items em{
           color: rgb(46, 41, 41);
           background-color: rgb(255, 255, 255);
           display: block;
@@ -126,6 +138,184 @@ body{
           font-size: 1.5rem;
           text-align: center;
           }
+
+/* animation */
+.items{
+    /* position:absolute; */
+    background-position-x: center;
+    background-size: cover;
+    animation: enlivens 5s linear infinite;
+    width: 99vw;
+    height: 83vh;
+}
+@keyframes enlivens {
+    0%,100%{
+        transform: scale(1);
+    }
+50%{
+    transform: scale(1.03);
+}
+}
+span{
+    position:absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1),0 0 0 2px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+span::before{
+    content:'';
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+    transform: translateY
+     (-50%);
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(315deg) translate(0);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translate(-1000px);
+    }
+}
+
+span:nth-child(2){
+    top:0;
+    right: 0;
+    /* left: initial; */
+    animation-delay: 0.2;
+    animation-duration: 5s;
+}
+
+span:nth-child(3){
+    top:0;
+    right: 3rem;
+    /* left: initial; */
+    animation-delay: 0.7;
+    animation-duration: 8s;
+}
+
+
+span:nth-child(4){
+    top:0;
+    right: 15rem;
+    /* left: initial; */
+    animation-delay: 0.3;
+    animation-duration: 4s;
+}
+
+span:nth-child(5){
+    top:0;
+    right: 50rem;
+    /* left: initial; */
+    animation-delay: 0.8;
+    animation-duration: 2s;
+}
+
+
+span:nth-child(6){
+    top:0;
+    right: 60rem;
+    /* left: initial; */
+    animation-delay: 0.2;
+    animation-duration: 9s;
+}
+
+span:nth-child(7){
+    top:0;
+    right: 70rem;
+    /* left: initial; */
+    animation-delay: 0.3;
+    animation-duration: 5s;
+}
+
+
+span:nth-child(8){
+    top:0;
+    right: 80rem;
+    /* left: initial; */
+    animation-delay: 0.7;
+    animation-duration: 4s;
+}
+
+span:nth-child(9){
+    top:0;
+    right: 30rem;
+    /* left: initial; */
+    animation-delay: 0.1;
+    animation-duration: 3s;
+}
+span:nth-child(10){
+    top:0;
+    right: 50rem;
+    /* left: initial; */
+    animation-delay: 0.3;
+    animation-duration: 2s;
+}
+span:nth-child(11){
+    top:0;
+    right: 40rem;
+    /* left: initial; */
+    animation-delay: 0.8;
+    animation-duration: 1s;
+}
+span:nth-child(12){
+    top:0;
+    right: 50rem;
+    /* left: initial; */
+    animation-delay: 0.3;
+    animation-duration: 5s;
+}
+span:nth-child(13){
+    top:0;
+    right: 35rem;
+    /* left: initial; */
+    animation-delay: 0.4;
+    animation-duration: 4s;
+}
+
+
+span:nth-child(14){
+    top:0;
+    right: 43rem;
+    /* left: initial; */
+    animation-delay: 0.8;
+    animation-duration: 2s;
+}
+
+span:nth-child(15){
+    top:0;
+    right: 1rem;
+    /* left: initial; */
+    animation-delay: 0.7;
+    animation-duration: 3s;
+}
+
+span:nth-child(16){
+    top:6rem;
+    right:0;
+    /* left: initial; */
+    animation-delay: 0.6;
+    animation-duration: 3s;
+}
+
+span:nth-child(17){
+    top:20rem;
+    right: 0;
+    /* left: initial; */
+    animation-delay: 0.5;
+    animation-duration: 9s;
+}
+
+
 
 
 /* about page */
@@ -196,7 +386,7 @@ grid-template-columns: auto auto auto;
 }
 
 .container .box img{
-    width: 29rem;
+    width: 24rem;
     height:100%;
     background: red;
     transition: width 2s, height 4s;
@@ -207,4 +397,120 @@ grid-template-columns: auto auto auto;
 
     /* z-index: 1; */
 }
+
+/* service page css */
+
+.services_main{
+ width: 95vw;
+ padding: 8rem;
+
+
+
+
+}
+.services_main .s1,.s2,.s3,.s4{
+    display: flex;
+}
+
+
+.services_main .s1 img{
+ width: 40rem;
+ border-radius: 100%;
+}
+.services_main .s2 img{
+    width: 40rem;
+    border-radius: 50%;
+   }
+   .services_main .s3 img{
+    width: 40rem;
+    border-radius: 50%;
+    
+   }
+   .services_main .s4 img{
+    width: 40rem;
+    border-radius: 50%;
+   }
+         
+
+   .services_main .s1 h1{
+    width: 40rem;
+    color: white;
+    font-size: 4rem;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balsamiq Sans', cursive;
+   }
+   .services_main .s2 h1{
+       width: 60rem;
+       color: white;
+       font-size: 4rem;
+       display: flex;
+           justify-content: center;
+           align-items: center;
+       font-family: 'Balsamiq Sans', cursive;
+      }
+      .services_main .s3 h1{
+       width: 40rem;
+color: white;
+font-size: 3rem;
+display: flex;
+    justify-content: center;
+    align-items: center;
+       font-family: 'Balsamiq Sans', cursive;
+      }
+      .services_main .s4 h1{
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 4rem;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+       width: 60rem;
+       color: white;
+      }
+            
+
+/* contact page css */
+.contact_main{
+    width: 90vw;
+    padding: 6rem;
+    display: flex;
+}
+
+
+.contact_main .image img{
+    width: 40rem
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
