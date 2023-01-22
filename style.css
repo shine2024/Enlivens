@@ -200,7 +200,7 @@ span:nth-child(3){
     right: 3rem;
     /* left: initial; */
     animation-delay: 0.7;
-    animation-duration: 8s;
+    animation-duration: 2s;
 }
 
 
@@ -226,7 +226,7 @@ span:nth-child(6){
     right: 60rem;
     /* left: initial; */
     animation-delay: 0.2;
-    animation-duration: 9s;
+    animation-duration: 2s;
 }
 
 span:nth-child(7){
@@ -234,7 +234,7 @@ span:nth-child(7){
     right: 70rem;
     /* left: initial; */
     animation-delay: 0.3;
-    animation-duration: 5s;
+    animation-duration: 6s;
 }
 
 
@@ -312,9 +312,64 @@ span:nth-child(17){
     right: 0;
     /* left: initial; */
     animation-delay: 0.5;
+    animation-duration: 4s;
+}
+span:nth-child(18){
+    top:40rem;
+    right: 0;
+    /* left: initial; */
+    animation-delay: 0.4;
+    animation-duration: 2s;
+}
+span:nth-child(19){
+    top:06rem;
+    right: 0;
+    /* left: initial; */
+    animation-delay: 0.5;
+    animation-duration: 6s;
+}
+span:nth-child(20){
+    top:0rem;
+    right:3rem;
+    /* left: initial; */
+    animation-delay: 0.4;
     animation-duration: 9s;
 }
-
+span:nth-child(21){
+    top:2rem;
+    right: 0;
+    /* left: initial; */
+    animation-delay: 0.2;
+    animation-duration: 1s;
+}
+span:nth-child(22){
+    top:0rem;
+    right: 10rem;
+    /* left: initial; */
+    animation-delay: 0.5;
+    animation-duration: 2s;
+}
+span:nth-child(23){
+    top:0rem;
+    right: 50rem;
+    /* left: initial; */
+    animation-delay: 0.4;
+    animation-duration: 3s;
+}
+span:nth-child(24){
+    top:0rem;
+    right: 40rem;
+    /* left: initial; */
+    animation-delay: 0.3;
+    animation-duration: 7s;
+}
+span:nth-child(25){
+    top:0rem;
+    right: 80rem;
+    /* left: initial; */
+    animation-delay: 0.5;
+    animation-duration: 5s;
+}
 
 
 
@@ -335,6 +390,7 @@ span:nth-child(17){
     display: block;
     width: 25rem;
     border-radius: 1rem;
+    cursor:pointer;
     }
     .aboutsec .protext{
          padding: 3rem;
@@ -483,6 +539,17 @@ display: flex;
     
 }
 
+.contact_main .contact{
+    padding-left: 5rem;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+}
+.contact_main .contact h2{
+    color: rgb(255, 255, 255);
+padding-bottom: 2rem;
+font-family: 'Balsamiq Sans', cursive;
+    font-size: 4rem;
+}
 
 
 
@@ -514,3 +581,38 @@ display: flex;
 
 
 
+
+
+
+
+
+
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    /* Change font-size for menu items */
+    .menu ul li a {
+      font-size: 1.5rem;
+    }
+    /* Change padding for menu items */
+    .menu ul li a {
+      padding: 0.5rem;
+    }
+    /* Change font-size for menu logo */
+    .menu em {
+      font-size: 3rem;
+    }
+    /* Change font-size for button text */
+    .items button a {
+      font-size: 1.5rem;
+    }
+    /* Change width for button */
+    .items button {
+      width: 8rem;
+    }
+    /* Change padding for phone number */
+    .items em {
+      padding: 0.5rem;
+    }
+  }
+      
