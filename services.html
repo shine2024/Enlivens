@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>services</title>
-</head>
-<body>
-    <!-- bar area -->
-<div class="menu">
-    <img src="images/My project.png" alt="">
-    <em class="text1">ENLIVENS</em>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work.html">work</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
+    <script>
+        fetch(document.baseURI.replace("services", "allHeader"), ).
+        then(async r => {
+            document.body.innerHTML = (await r.text()) + document.body.innerHTML;
+        });
+    </script>
+<body style="background:radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);">
+    <!-- NarBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3 me-5" href="#">
+                <img src="images/My project.png" alt="Bootstrap" width="50" height="50">
+            </a>
+            <a class="navbar-brand ms-2 me-5" style="font-size: xxx-large;" href="#">ENLIVENS</a>
+            <button style="background-color:darkgrey;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="font-size: x-large;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-<section class="services_main">
+    <section class="services_main">
 
-    
-<div class="s1"><img src="images/renovation.jpg" alt="">
-<h1>RENOVATION</h1></div>
-<div class="s2"><h1>ARCHITECTURE</h1><img src="images/architecture.jpg" alt="">
-</div>
-<div class="s3"><img src="images/interior.jpg" alt=""><h1>INTERIOR DESIGNING</h1></div>
-<div class="s4">
-    <h1>MASTER PLANNING</h1>
-    <img src="images/masterplanning.jpg" alt=""></div>
-<!-- <div class="s5"></div> -->
 
-</section>
+        <div class="s1"><img src="images/renovation.jpg" alt="">
+            <h1>RENOVATION</h1>
+        </div>
+        <div class="s2">
+            <h1>ARCHITECTURE</h1><img src="images/architecture.jpg" alt="">
+        </div>
+        <div class="s3"><img src="images/interior.jpg" alt="">
+            <h1>INTERIOR DESIGNING</h1>
+        </div>
+        <div class="s4">
+            <h1>MASTER PLANNING</h1>
+            <img src="images/masterplanning.jpg" alt=""></div>
+        <!-- <div class="s5"></div> -->
+
+    </section>
 
 
 </body>
+
 </html>

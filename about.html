@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>about</title>
 
+<script>
+    fetch(document.baseURI.replace("about", "allHeader"), ).
+    then(async r => {
+        document.body.innerHTML = (await r.text()) + document.body.innerHTML;
+    });
+</script>
 </head>
-<body>
-    <!-- bar area -->
-<div class="menu">
-    <img src="images/My project.png" alt="">
-    <em class="text1">ENLIVENS</em>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work.html">work</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
+
+<body style="background-color: rgb(45, 46, 56);">
+    <!-- NarBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3 me-5" href="#">
+                <img src="images/My project.png" alt="Bootstrap" width="50" height="50">
+            </a>
+            <a class="navbar-brand ms-2 me-5" style="font-size: xxx-large;" href="#">ENLIVENS</a>
+            <button style="background-color:darkgrey;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="font-size: x-large;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- image and information -->
+
+    <div class="aboutsec">
+
+        <div class="profile">
+            <img src="images/fd.png" alt="">
+        </div>
+
+        <div class="protext">
+            <em>MY STORY</em>
+            <p class="t2">We are a friendly, open-minded team of architects and designers whose work is inspired by people, culture and light. We co-create useful places, taking every opportunity to add beauty along the way.Our aim is to improve people’s lives by reimagining
+                the city in which we work, live and play. The studio is collaborative, innovative, informed and aspirational. We work at all scales of Planning, Architecture, Interiors and Landscape projects from bespoke private homes to commercial developments;
+                urban renewal to master plans; Residential interiors to commercial. We have a separate wing called Vivify Green this mission objective is Environmental impact is a key consideration in our work. We take a research-based, fabric first approach
+                to sustainability that carefully considers the embodied energy of materials and the energy performance of our buildings in use.</p>
+            <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-AMOS REDDY-</em>
+        </div>
 
 
-<!-- image and information -->
-
-<div class="aboutsec">
-
-<div class="profile">
-   <img src="images/fd.png" alt="">
-</div>
-
-<div class="protext">
-    <em>MY STORY</em>
-    <p class="t2">We are a friendly, open-minded team of architects and designers whose work is inspired by people, culture and light. We co-create useful places, taking every opportunity to add beauty along the way.Our aim is to improve people’s lives by reimagining the city in which we work, live and play. The studio is collaborative, innovative, informed and aspirational. We work at all scales of Planning, Architecture, Interiors and Landscape projects from bespoke private homes to commercial developments; urban renewal to master plans; Residential interiors to commercial.
-
-        We have a separate wing called Vivify Green this mission objective is Environmental impact is a key consideration in our work. We take a research-based, fabric first approach to sustainability that carefully considers the embodied energy of materials and the energy performance of our buildings in use.</p>
-        <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-AMOS REDDY-</em>
-</div>
 
 
 
@@ -49,9 +70,7 @@
 
 
 
-
-
-</div>
+    </div>
 
 
 
@@ -70,4 +89,5 @@
 
 
 </body>
+
 </html>
