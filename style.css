@@ -392,7 +392,8 @@ flex-wrap: wrap;
 
 .container .box img{
     border: 5px solid black;
-    /* margin: 10px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 24rem;
     height:100%;
     background: red;
