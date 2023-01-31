@@ -351,6 +351,14 @@ span[id='star'][id='star']:nth-child(25){
 
 
 /* work page */
+    #items{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+
 .heading{
     display: flex;
     flex-direction: column;
@@ -373,26 +381,29 @@ margin-bottom: 0%;
 
 .container{
 /* width: 100vw; */
-padding: 4rem;
-display: grid;
+/* padding: 2rem; */
+/* display: grid;
 column-gap: 50px;
 row-gap: 50px;
-grid-template-columns: auto auto auto;
-
+grid-template-columns: auto auto auto; */
+display: flex;
+flex-wrap: wrap;
 }
 
 .container .box img{
+    border: 5px solid black;
+    /* margin: 10px; */
     width: 24rem;
     height:100%;
     background: red;
-    transition: width 2s, height 4s;
+    transition: width 0.4s, height 0.4s;
     /* z-index: -1; */
 }
-.container .box img:hover{
-    width: 60rem;
+/* .container .box img:hover{
+    width: 30rem;
 
     /* z-index: 1; */
-}
+} */
 
 /* service page css */
 
