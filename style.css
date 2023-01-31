@@ -404,7 +404,7 @@ flex-wrap: wrap;
     width: 30rem;
 
     /* z-index: 1; */
-} */
+/* } */ 
 
 /* service page css */
 
@@ -418,6 +418,7 @@ flex-wrap: wrap;
 }
 .services_main .s1,.s2,.s3,.s4{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -444,7 +445,8 @@ flex-wrap: wrap;
     width: 40rem;
     color: white;
     font-size: 4rem;
-display: flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-family: 'Balsamiq Sans', cursive;
@@ -454,6 +456,7 @@ display: flex;
        color: white;
        font-size: 4rem;
        display: flex;
+       flex-wrap: wrap;
            justify-content: center;
            align-items: center;
        font-family: 'Balsamiq Sans', cursive;
@@ -463,6 +466,7 @@ display: flex;
 color: white;
 font-size: 3rem;
 display: flex;
+flex-wrap: wrap;
     justify-content: center;
     align-items: center;
        font-family: 'Balsamiq Sans', cursive;
@@ -471,18 +475,21 @@ display: flex;
         font-family: 'Balsamiq Sans', cursive;
         font-size: 4rem;
         display: flex;
+        flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-       width: 60rem;
+       width: 20rem;
        color: white;
       }
             
 
 /* contact page css */
 .contact_main{
-    width: 90vw;
-    padding: 6rem;
+    
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
