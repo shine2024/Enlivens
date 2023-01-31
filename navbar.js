@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <script>
-    c_url = document.baseURI
-    fetch(c_url.endsWith(".html")? c_url.replace("index", "allHeader"): c_url+"allHeader.html").then(async (r) => {
-      document.body.innerHTML = (await r.text()) + document.body.innerHTML;
-    });
-  </script>
-  <body>
-    <!-- NarBar -->
+function navBar(active){
+    return ` <!-- NarBar -->
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark"
       data-bs-theme="dark"
@@ -42,44 +34,24 @@
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
+              <a class="nav-link ${active === 'Home' ?'active': ''}" aria-current="page" href="/index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/work.html">Work</a>
+              <a class="nav-link ${active === 'Work' ?'active': ''}" href="/work.html">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/services.html">Services</a>
+              <a class="nav-link ${active === 'Services' ?'active': ''}" href="/services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link ${active === 'About' ?'active': ''}" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link ${active === 'Contact' ?'active': ''}" href="/contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-
-    <div class="items" id="itemsContainer">
-      <img src="/images/test.png" alt="" />
-      <button><a href="work.html">Projects</a></button>
-      <em>CALL 9705204722 !</em>
-    </div>
-    <script>
-      for (i = 0; i < 25; i++) {
-        sp = document.createElement("span");
-        sp.setAttribute("id", "star");
-        document.getElementById("itemsContainer").appendChild(sp);
-      }
-    </script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+    </nav>`
+}

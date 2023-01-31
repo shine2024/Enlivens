@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <script>
-        fetch(document.baseURI.replace("services", "allHeader"), ).
-        then(async r => {
-            document.body.innerHTML = (await r.text()) + document.body.innerHTML;
+        c_url = document.baseURI
+        fetch(c_url.endsWith(".html")? c_url.replace("services", "allHeader"): c_url+"allHeader.html").then(async (r) => {
+          document.body.innerHTML = (await r.text()) + document.body.innerHTML;
         });
-    </script>
+      </script>
 <body style="background:radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);">
     <!-- NarBar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">

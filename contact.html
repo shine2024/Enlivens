@@ -2,11 +2,11 @@
 <html lang="en">
 
 <script>
-    fetch(document.baseURI.replace("contact", "allHeader"), ).
-    then(async r => {
-        document.body.innerHTML = (await r.text()) + document.body.innerHTML;
+    c_url = document.baseURI
+    fetch(c_url.endsWith(".html")? c_url.replace("contact", "allHeader"): c_url+"allHeader.html").then(async (r) => {
+      document.body.innerHTML = (await r.text()) + document.body.innerHTML;
     });
-</script>
+  </script>
 
 <body style="background-color: rgb(45, 46, 56);">
     <!-- NarBar -->
