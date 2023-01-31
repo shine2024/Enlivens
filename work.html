@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-    fetch(document.baseURI.replace("work", "allHeader"), ).
-    then(async r => {
-        document.body.innerHTML = (await r.text()) + document.body.innerHTML;
-    });
-</script>
+    <script>
+        c_url = document.baseURI
+        fetch(c_url.endsWith(".html")? c_url.replace("work", "allHeader"): c_url+"allHeader.html").then(async (r) => {
+          document.body.innerHTML = (await r.text()) + document.body.innerHTML;
+        });
+      </script>
 
 <body>
 
