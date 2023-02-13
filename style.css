@@ -458,21 +458,30 @@ grid-template-columns: auto auto auto; */
 }
 
 /* contact page css */
-.contact_main {
-  width: 100vw;
+section .contact_main {
+  width: 90vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+}
+body > section > div.image{
+  /* display: block; */
+  width:50%;
+  padding: 4%;
 }
 
 .contact_main .image img {
-  width: 40rem;
-  padding-top: 5rem;
-  padding-right: 5rem;
+  width: 100%;
+ 
 }
-
+body > section{
+  display: flex;
+  flex-wrap: wrap;
+}
 .contact_main .contact {
   padding: 5rem;
+  width:40%;
   font-family: "Balsamiq Sans", cursive;
   color: white;
 }
@@ -574,12 +583,12 @@ grid-template-columns: auto auto auto; */
     /* width: 50%rem; */
     color: white;
   }
-  .contact_main .contact img{
-    width:100%;
+  .contact_main  img{
+    /* width:90%; */
     padding:0%;
     margin: 0%;
     padding-right: 0%;
-    width:100%;
+    width:400px;
   }
   .image{
     padding:0%;
@@ -591,8 +600,18 @@ grid-template-columns: auto auto auto; */
   }
 
 
+  .contact_main .contact {
+    padding: 5rem;
+    width:100%;
+    font-family: "Balsamiq Sans", cursive;
+    color: white;
+  }
 
-
+  body > section > div.image{
+    /* display: block; */
+    width:100%;
+    padding: 4%;
+  }
 
 
   .contact_main .contact h2 {
@@ -608,6 +627,23 @@ grid-template-columns: auto auto auto; */
     font-family: "Balsamiq Sans", cursive;
     color: white;
   }
+
+  body > section > div.contact{
+    padding: 0%;
+  }
+  
+  .contact_main .contact{
+    padding: 0%;
+  }
+
+  .contact_main .contact h2{
+    font-size: 3rem;
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 2%;
+    padding-left: 2rem;
+  }
+
 
   .container .box img {
     border: 5px solid black;
