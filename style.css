@@ -465,23 +465,22 @@ section .contact_main {
   /* flex-wrap: wrap; */
   /* justify-content: center; */
 }
-body > section > div.image{
+body > section > div.image {
   /* display: block; */
-  width:50%;
+  width: 50%;
   padding: 4%;
 }
 
 .contact_main .image img {
   width: 100%;
- 
 }
-body > section{
+body > section {
   display: flex;
   flex-wrap: wrap;
 }
 .contact_main .contact {
   padding: 5rem;
-  width:40%;
+  width: 40%;
   font-family: "Balsamiq Sans", cursive;
   color: white;
 }
@@ -583,36 +582,34 @@ body > section{
     /* width: 50%rem; */
     color: white;
   }
-  .contact_main  img{
+  .contact_main img {
     /* width:90%; */
-    padding:0%;
+    padding: 0%;
     margin: 0%;
     padding-right: 0%;
-    width:400px;
+    width: 400px;
   }
-  .image{
-    padding:0%;
+  .image {
+    padding: 0%;
     margin: 0%;
   }
-  body > section > div.image > img{
+  body > section > div.image > img {
     padding: 0;
     margin: 0%;
   }
 
-
   .contact_main .contact {
     padding: 5rem;
-    width:100%;
+    width: 100%;
     font-family: "Balsamiq Sans", cursive;
     color: white;
   }
 
-  body > section > div.image{
+  body > section > div.image {
     /* display: block; */
-    width:100%;
+    width: 100%;
     padding: 4%;
   }
-
 
   .contact_main .contact h2 {
     color: rgb(255, 255, 255);
@@ -628,22 +625,21 @@ body > section{
     color: white;
   }
 
-  body > section > div.contact{
-    padding: 0%;
-  }
-  
-  .contact_main .contact{
+  body > section > div.contact {
     padding: 0%;
   }
 
-  .contact_main .contact h2{
+  .contact_main .contact {
+    padding: 0%;
+  }
+
+  .contact_main .contact h2 {
     font-size: 3rem;
     padding: 0%;
     margin: 0%;
     margin-bottom: 2%;
     padding-left: 2rem;
   }
-
 
   .container .box img {
     border: 5px solid black;
