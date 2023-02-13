@@ -29,7 +29,7 @@ function validateCaptcha() {
   event.preventDefault();
   debugger
   if (document.getElementById("cpatchaTextBox").value == code) {
-    alert("Valid Captcha")
+    fetch('http://127.0.0.1:5000',{method:"POST",body:document.contact_form})
   }else{
     alert("Invalid Captcha. try Again");
     createCaptcha();
