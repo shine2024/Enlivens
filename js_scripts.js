@@ -1,5 +1,6 @@
 var code;
 function createCaptcha() {
+    document.getElementById("currentpageURL").value=document.baseURI;
   //clear the contents of captcha div first 
   document.getElementById('captcha').innerHTML = "";
   var charsArray =
@@ -26,12 +27,11 @@ function createCaptcha() {
   document.getElementById("captcha").appendChild(canv); // adds the canvas to the body element
 }
 function validateCaptcha() {
-  event.preventDefault();
-  debugger
   if (document.getElementById("cpatchaTextBox").value == code) {
-    fetch('http://127.0.0.1:5000',{method:"POST",body:document.contact_form})
+    return true;
   }else{
     alert("Invalid Captcha. try Again");
     createCaptcha();
+    return false;
   }
 }

@@ -9,4 +9,5 @@ def index():
     print(request.form)
     return redirect(request.form.get("url"))
 
+
 app.run()
